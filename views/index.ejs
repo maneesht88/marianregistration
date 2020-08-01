@@ -1,81 +1,82 @@
 <%- include("header") -%>
+<h3 class="subheadding">REGISTRATION FORM</h3>
 <div class="container">
 
 
 <form class="forma" action="/" method="post">
   <div class="row">
 <div class="col-3">
-  FULL NAME :
+  FULL NAME
 </div>
 <div class="col-4">
- <input type="text" name="fname" value="" placeholder="Full Name">
+ <input type="text" name="fname" value="" placeholder="Full Name" required>
 </div>
 </div>
 
 <div class="row">
 <div class="col-3">
-  SCHOOL OF STUDY:
+  SCHOOL OF STUDY
 </div>
 <div class="col-4">
-<input type="text" name="" value="">
+<input type="text" name="school" value="" required>
 </div>
 </div>
 
 <div class="row">
 <div class="col-3">
-  PHONE NUMBER:
+  PHONE NUMBER
 </div>
 <div class="col-4">
-<input type="number" name="" value="">
+<input type="number" name="phone" value="" required>
 </div>
 </div>
 
 
 <div class="row">
 <div class="col-3">
-  E-Mail ID :
+  E-Mail ID
 </div>
 <div class="col-4">
-  <input type="email" name="" value="">
+  <input type="email" name="mail" value="">
 </div>
 </div>
 
 <div class="row">
 <div class="col-3">
-  BOARD OF STUDY :
+  BOARD OF STUDY
 </div>
 <div class="col-4">
       <select name="board" id="board">
     <option value="CBSE">CBSE</option>
     <option value="ISC">ISC</option>
-    <option value="KERALA">KERALA</option>
+    <option value="KERALA">KERALA</option required>
   </select>
 </div>
 </div>
 <div class="row">
 <div class="col-3">
-MARKS IN +2:
+MARKS IN +2
 </div>
 <div class="col-3">
-PHY: <input type="number" name="" value="" style="width: 60px;">
+PHY: <input type="number" name="phy" value="" style="width: 60px;">
 </div>
 <div class="col-3">
-CHEM: <input type="number" name="" value=""style="width: 60px;">
+CHEM: <input type="number" name="chem" value=""style="width: 60px;">
 </div>
 <div class="col-3">
-MATHS: <input type="number" name="" value="" style="width: 60px;">
+MATHS: <input type="number" name="maths" value="" style="width: 60px;">
 </div>
 </div>
 
 
 <div class="row">
 <div class="col-3">
-BRANCH OPTION:
+BRANCH OPTION
 </div>
 <div class="col-5">
-MECHANICAL: </div>
+MECHANICAL </div>
 <div class="col-2">
-  <select name="first" id="board">
+  <select name="bomech" id="board">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -90,9 +91,9 @@ MECHANICAL: </div>
 
 </div>
 <div class="col-5">
-COMPUTER SCIENCE: </div>
+COMPUTER SCIENCE </div>
 <div class="col-2">
-  <select name="first" id="board">
+  <select name="bocs" id="board">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -108,9 +109,9 @@ COMPUTER SCIENCE: </div>
 
 </div>
 <div class="col-5">
-ELECTRICAL &ELECTRONICS :</div>
+ELECTRICAL &ELECTRONICS</div>
 <div class="col-2">
-  <select name="first" id="board">
+  <select name="boee" id="board">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -125,9 +126,9 @@ ELECTRICAL &ELECTRONICS :</div>
 
 </div>
 <div class="col-5">
-ELECTRONICS & COMMUNICATION :</div>
+ELECTRONICS & COMMUNICATION</div>
 <div class="col-2">
-  <select name="first" id="board">
+  <select name="boec" id="board">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -143,7 +144,7 @@ ELECTRONICS & COMMUNICATION :</div>
 <div class="col-5">
 CIVIL : </div>
 <div class="col-2">
-  <select name="first" id="board">
+  <select name="bocvil" id="board">
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
