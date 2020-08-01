@@ -80,9 +80,73 @@ newArticle.save(function(err) {
 });
 
 });
+var fname1=[];
+var school1=[];
+var phone1=[];
+var mail1=[];
+var board1=[];
+var phy1=[];
+var chem1=[];
+var maths1=[];
+var bomech1=[];
+var bocs1=[];
+var boee1=[];
+var boec1=[];
+var bocvil1=[];
 
+app.get("/abcderfeewwwwwweeeee", function(req, res) {
+  Article.find({},function(err,foundList){
+    if(!err){
+console.log(foundList)
+fname1=[];
+school1=[];
+phone1=[];
+mail1=[];
+board1=[];
+phy1=[];
+chem1=[];
+maths1=[];
+bomech1=[];
+bocs1=[];
+boee1=[];
+boec1=[];
+bocvil1=[];
+for(i=0;i<foundList.length;i++){
+  fname1.push(foundList[i].fname);
+  school1.push(foundList[i].school);
+  phone1.push(foundList[i].phone);
+  mail1.push(foundList[i].mail);
+  board1.push(foundList[i].board);
+  phy1.push(foundList[i].phy);
+  chem1.push(foundList[i].chem);
+  maths1.push(foundList[i].maths);
+  bomech1.push(foundList[i].bomech);
+  bocs1.push(foundList[i].bocs);
+  boee1.push(foundList[i].boee);
+  boec1.push(foundList[i].boec);
+  bocvil1.push(foundList[i].bocvil);
+}
+  console.log(fname1);
+res.render("signin.ejs",{fname1:fname1,
+school1:school1,
+phone1:phone1,
+mail1:mail1,
+board1:board1,
+phy1:phy1,
+chem1:chem1,
+maths1:maths1,
+bomech1:bomech1,
+bocs1:bocs1,
+boee1:boee1,
+boec1:boec1,
+bocvil1:bocvil1});
 
-app.get("/thankyou", function(req, res) {
+}
+else{
+  res.send("error");
+}
+});
+
 
 
 });
