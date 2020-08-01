@@ -1,17 +1,39 @@
 <%- include("header") -%>
+<table style="width:100%">
+
+<tr>
+  <th>NAME</th>
+  <th>SCHOOL NAME</th>
+  <th>PHONE NO</th>
+  <th>MAILID</th>
+  <th>BOARD</th>
+  <th>PHY MARK</th>
+  <th>CHEM MARK</th>
+  <th>MATHS MARK</th>
+  <th>MECHOPTION</th>
+  <th>CSOPTION</th>
+  <th>EEOPTION</th>
+  <th>ECOPTION</th>
+  <th>CIVILOPTION</th>
+</tr>
 <%for(i=0;i<fname1.length;i++){%>
-<%=fname1[i]%>
-<%=school1[i]%>
-<%=phone1[i]%>
-<%=mail1[i]%>
-<%=board1[i]%>
-<%=phy1[i]%>
-<%=chem1[i]%>
-<%=maths1[i]%>
-<%=bomech1[i]%>
-<%=bocs1[i]%>
-<%=boee1[i]%>
-<%=boec1[i]%>
-<%=bocvil1[i]%><br>
+
+  <tr>
+    <td><%=fname1[i]%></td>
+    <td><%=school1[i]%></td>
+    <td><%=phone1[i]%></td>
+    <td><%=mail1[i]%></td>
+    <td><%=board1[i]%></td>
+    <td><%=phy1[i]%></td>
+    <td><%=chem1[i]%></td>
+    <td><%=maths1[i]%></td>
+    <td><%=bomech1[i]%></td>
+    <td><%=bocs1[i]%></td>
+    <td><%=boee1[i]%></td>
+    <td><%=boec1[i]%></td>
+    <td><%=bocvil1[i]%></td>
+</tr>
+
 <%}%>
+</table>
 <%- include("footer") -%>
